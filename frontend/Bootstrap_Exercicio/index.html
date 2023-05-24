@@ -5,9 +5,211 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>CO-News</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <header>
+                    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">CO-News</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sobre">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contato">Contato</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Novidades
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#destaque-cards">Tecnologia</a></li>
+                                    <li><a class="dropdown-item" href="#destaque-cards">Automotivo</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#destaque-cards">Em destaque</a></li>
+                                </ul>
+                            </li>
+                            </ul>
+                            <div class="d-flex">
+                                <button class="btn btn-dark" id="btn-toast" type="button">Notifications</button>
+                            </div>
+                        </div>
+                        </div>
+                    </nav>
+                </header>
+                <div class="col-12">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <img src="/images/img1.jpg" class="d-block w-100 carousel-image" alt="First slide">
+                                <div class="carousel-caption d-none d-md-block glass">
+                                    <h5>First slide label</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="/images/img2.jpg" class="d-block w-100 carousel-image" alt="Second slide">
+                                <div class="carousel-caption d-none d-md-block glass">
+                                    <h5>Second slide label</h5>
+                                    <p>Some representative placeholder content for the second slide</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="/images/img3.jpg" class="d-block w-100 carousel-image" alt="Third slide">
+                                <div class="carousel-caption d-none d-md-block glass">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>                
+            </div>
+        </div>
+        <section id="destaque-cards">
+            <div id="box-title">
+                <h2>Em destaque</h2>
+            </div>
+            <div class="row mt-3">
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+                    <div class="card text-bg-dark">
+                        <img src="/images/card1.jpg" />
+                        <div class="card-body">
+                            <time class="d-flex justify-content-end">Publicado em 23/05/2023</time>
+                            <h4 class="card-title">Título do Card</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati dicta esse suscipit maxime optio numquam error, reprehenderit, provident animi iure asperiores dignissimos ut odit tenetur. Pariatur quae amet repellat laborum.
+                            </p>
+                            <a href="#" class="btn btn-warning">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+                    <div class="card text-bg-dark">
+                        <img src="/images/card2.jpg" />
+                        <div class="card-body">
+                            <time class="d-flex justify-content-end">Publicado em 23/05/2023</time>
+                            <h4 class="card-title">Título do Card</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati dicta esse suscipit maxime optio numquam error, reprehenderit, provident animi iure asperiores dignissimos ut odit tenetur. Pariatur quae amet repellat laborum.
+                            </p>
+                            <a href="#" class="btn btn-warning">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+                    <div class="card text-bg-dark">
+                        <img src="/images/card3.jpg" />
+                        <div class="card-body">
+                            <time class="d-flex justify-content-end">Publicado em 23/05/2023</time>
+                            <h4 class="card-title">Título do Card</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati dicta esse suscipit maxime optio numquam error, reprehenderit, provident animi iure asperiores dignissimos ut odit tenetur. Pariatur quae amet repellat laborum.
+                            </p>
+                            <a href="#" class="btn btn-warning">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section id="sobre">
+            <div id="box-title">
+                <h2>Sobre</h2>
+            </div>
+            <div class="crow mt-3 d-flex radius text-bg-dark align-items-center">
+                <div class="col-6">
+                    <img src="/images/sobre.jpg" class="radius" />
+                </div>
+                <div class="col-6 flex-column">
+                    <h3>Since 2010</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed reprehenderit voluptate, tenetur consequuntur adipisci, labore quos veritatis at assumenda placeat repellendus quasi soluta vero ab! Nam repudiandae nisi aliquam alias?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores qui quae excepturi, architecto nemo alias sint unde vel impedit esse illo ducimus odit veniam cumque asperiores totam at, fugiat numquam?
+                    </p>
+                </div>    
+            </div>
+        </section>
+        <section id="contato" class="radius">
+            <div class="row">
+                <div class="col-6 flex-column">
+                    <div class="flex-column">
+                        <h2>Contato</h2>
+                        <p>
+                            E-mail: contact@conews.com
+                        </p>
+                        <p>
+                            Tel: (21) 99999-9999
+                        </p>
+                        <p>
+                            CNPJ: XX. XXX. XXX/0001-XX.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <form>
+                        <label class="form-label" for="nome">Seu nome:</label>
+                        <input class="form-control" type="text" id="nome" required/>
+                        <label for="email" class="form-label">Seu e-mail:</label>
+                        <input id="email" type="email" class="form-control" required/>
+                        <label for="mensagem" class="form-label">Sua mensagem:</label>
+                        <textarea id="mensagem" class="form-control" required></textarea>
+                        <div class="form-check form-switch">
+                            <label class="form-check-label" for="aceito-termos">Li e concordo com os termos do CO-News</label>
+                            <input class="form-check-input" type="checkbox" id="aceito-termos" required>
+                        </div>
+                        <button class="btn btn-warning">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div class="toast text-bg-dark" id="mensagens-alerta">
+            <header class="toast-header text-bg-dark">
+                <strong>Importante</strong>
+            </header>
+            <div class="toast-body">
+                Você possui 10 notícias não lidas
+                <div class="mt-2 pt-2 border-top">
+                    <button data-bs-dismiss="toast" class="btn btn-danger" type="button">
+                        Descartar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-bg-dark">
+        &copy; 2023 - Todos os direitos reservados a CO-News
+    </footer>
+    <script src="/lib/bootstrap.bundle.min.js"></script>
+    <script src="/main.js"></script>
 </body>
 </html>

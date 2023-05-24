@@ -1,0 +1,80 @@
+body {
+    background-color: #414141;
+}
+
+nav {
+    border-left: 4px solid #eeff58;
+}
+
+#carouselExampleCaptions img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.glass {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 32px;
+}
+
+.radius {
+    border-radius: 8px;
+}
+
+time {
+    font-size: 12px;
+    color: #ccc;
+}
+
+div h2 {
+    color: #fff;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+#box-title {
+    border-bottom: 2px solid #eeff58e1;
+    width: 200px;
+}
+
+#sobre img {
+    width: 100%;
+}
+
+section {
+    margin-top: 32px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+
+#sobre h3 {
+    color: #eeff58e1;
+}
+
+#contato {
+    background-color: #ccc;
+    padding: 32px;
+}
+
+#contato h2 {
+    color:rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+}
+
+#contato p {
+    margin: 2px;
+    font-style: italic;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    background-color:#ccc;
+}
